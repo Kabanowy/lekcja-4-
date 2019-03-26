@@ -3,13 +3,15 @@ def setup():
     textSize(50)
     textAlign(CENTER)
 def draw():
-    text("ha", width/2, (height/3)*2)
+    text("hehe", width/2, (height/3)*2)
     print(mouseX, mouseY)
     print(hex(get(100, 100)))
     print(CODED)
     if keyPressed:
-        print(keyCode)
-        text("O", width/2+75, (height/3)*2)
+        if keyCode == 39:
+            fill(0)
+        text("beka", width/2+120, (height/3)*2)
+        fill(255,50,30)
         
     s = createShape()
     s.beginShape()
